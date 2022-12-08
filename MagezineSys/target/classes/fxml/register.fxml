@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.PasswordField?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.eccentric.Controller.registerController"
+            prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #17212B;"
+            stylesheets="@/css/style.css">
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+<!--                左边logo-->
+                <VBox prefHeight="500.0" prefWidth="600.0">
+                    <children>
+                        <ImageView fitHeight="70.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@/img/Login/1.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets left="35.0" top="90.0" />
+                            </VBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="73.0" fitWidth="401.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@/img/Login/2.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets left="55.0" top="10.0" />
+                            </VBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="86.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@/img/Login/3.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets left="70.0" top="10.0" />
+                            </VBox.margin>
+                        </ImageView>
+<!--                        登陆和退出按钮-->
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Button onMouseClicked="#backLogin" mnemonicParsing="false" prefHeight="50.0" prefWidth="111.0" style="-fx-background-radius: 100; -fx-background-color: #4a6c78; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);" text="登 录" textFill="LIGHTGRAY">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Button>
+                                <Pane prefHeight="100.0" prefWidth="56.0" />
+                                <Button onMouseClicked="#exit" mnemonicParsing="false" prefHeight="50.0" prefWidth="111.0" style="-fx-background-radius: 100; -fx-background-color: #4a6c78; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);" text=" 退 出" textFill="LIGHTGRAY">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                            <VBox.margin>
+                                <Insets top="30.0" />
+                            </VBox.margin>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="500.0" prefWidth="550.0">
+                    <children>
+<!--                        账号密码输入框-->
+                        <VBox alignment="CENTER" prefHeight="400.0" prefWidth="321.0" style="-fx-background-color: #242F3D; -fx-background-radius: 30; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);">
+                            <children>
+                                <Pane prefHeight="17.0" prefWidth="325.0" />
+                                <HBox alignment="BOTTOM_LEFT" prefHeight="40.0" prefWidth="375.0">
+                                    <children>
+                                        <Label prefHeight="41.0" prefWidth="97.0" text="请输入手机" textFill="LIGHTGRAY">
+                                            <HBox.margin>
+                                                <Insets left="40.0" />
+                                            </HBox.margin>
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="355.0" style="-fx-background-color: rgba(255,255,255,0.3); -fx-background-radius: 100; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);">
+                                    <children>
+                                        <TextField fx:id="phoneInput" prefHeight="40.0" prefWidth="285.0" style="-fx-background-color: rgba(0,0,0,0); -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);">
+                                            <font>
+                                                <Font name="Calibri" size="18.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets />
+                                            </HBox.margin>
+                                        </TextField>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets left="30.0" right="30.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox alignment="BOTTOM_LEFT" prefHeight="40.0" prefWidth="375.0">
+                                    <children>
+                                        <Label prefHeight="41.0" prefWidth="97.0" text="请输入密码" textFill="LIGHTGRAY">
+                                            <HBox.margin>
+                                                <Insets left="40.0" />
+                                            </HBox.margin>
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="355.0" style="-fx-background-color: rgba(255,255,255,0.3); -fx-background-radius: 100; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);">
+                                    <children>
+                                        <PasswordField fx:id="pwdInput" prefHeight="40.0" prefWidth="285.0" style="-fx-background-color: rgba(0,0,0,0); -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);">
+                                            <font>
+                                                <Font name="Calibri" size="18.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets />
+                                            </HBox.margin>
+                                        </PasswordField>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets left="30.0" right="30.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox alignment="BOTTOM_LEFT" prefHeight="40.0" prefWidth="375.0">
+                                    <children>
+                                        <Label prefHeight="41.0" prefWidth="97.0" text="请确认密码" textFill="LIGHTGRAY">
+                                            <HBox.margin>
+                                                <Insets left="40.0" />
+                                            </HBox.margin>
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="355.0" style="-fx-background-color: rgba(255,255,255,0.3); -fx-background-radius: 100; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);">
+                                    <children>
+                                        <PasswordField fx:id="pwdConInput" prefHeight="40.0" prefWidth="285.0" style="-fx-background-color: rgba(0,0,0,0); -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);">
+                                            <font>
+                                                <Font name="Calibri" size="18.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets />
+                                            </HBox.margin>
+                                        </PasswordField>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets left="30.0" right="30.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <Pane prefHeight="29.0" prefWidth="325.0" />
+                                <Button onMouseClicked="#RegisterBtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="111.0" style="-fx-background-radius: 100; -fx-background-color: #4a6c78; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);" text=" 注 册" textFill="LIGHTGRAY">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="20.0" />
+                                    </VBox.margin>
+                                </Button>
+                            </children>
+                            <VBox.margin>
+                                <Insets left="20.0" right="20.0" top="40.0" />
+                            </VBox.margin>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </VBox>
+                    </children>
+                    <HBox.margin>
+                        <Insets right="20.0" />
+                    </HBox.margin>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

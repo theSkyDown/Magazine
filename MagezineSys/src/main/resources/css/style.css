@@ -1,0 +1,42 @@
+.viewport{
+    -fx-background-color: #0E1621;
+}
+Button:hover{
+    -fx-cursor: hand;
+}
+
+.orderLabel{
+    -fx-cursor: hand;
+}
+
+/*订阅时间选择时间*/
+.combo-box-popup .list-cell {
+    -fx-background-color: #242F3D;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+.combo-box-popup .list-cell:hover{
+    -fx-background-color: #656C76;
+    -fx-text-fill: black;
+}
+
+
+/*菜单按钮*/
+.menu-button{
+    -fx-cursor: hand;
+}
+
+.menu-item{
+    -fx-border-color: white;
+    -fx-background-color: #4A6C78;
+    -fx-pref-width: 161;
+    -fx-pref-height: 40;
+    -fx-font-size: 20;
+}
+
+.menu-item:hover{
+    -fx-text-fill: white;
+    -fx-background-color: #17212B;
+    -fx-cursor: hand;
+}
+

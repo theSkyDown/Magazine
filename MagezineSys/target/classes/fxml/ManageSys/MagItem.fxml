@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane
+        prefHeight="200.0" prefWidth="1000.0"
+        style="-fx-background-color: #242F3D; -fx-background-radius: 30;"
+        xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="com.eccentric.Controller.ManageSys.MagItemController"
+>
+   <children>
+      <HBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+<!--            图片-->
+            <ImageView fx:id="imgView" fitHeight="180.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+               <image></image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+
+<!--            杂志名称-->
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="150.0">
+               <children>
+                  <Label prefHeight="48.0" prefWidth="103.0" text="杂志名称:" textFill="LIGHTGRAY">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="magName" prefHeight="48.0" prefWidth="103.0" textFill="#6e6e6e">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+
+<!--            类型-->
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="150.0">
+               <children>
+                  <Label prefHeight="48.0" prefWidth="103.0" text="类型:" textFill="LIGHTGRAY">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="magClassify" prefHeight="48.0" prefWidth="200.0" textFill="#6E6E6E">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+
+<!--            价格-->
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="150.0">
+               <children>
+                  <Label prefHeight="48.0" prefWidth="103.0" text="价格:" textFill="LIGHTGRAY">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="magPrice" prefHeight="48.0" prefWidth="103.0" textFill="#6E6E6E">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+
+<!--            订阅人数-->
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="150.0">
+               <children>
+                  <Label prefHeight="48.0" prefWidth="103.0" text="订阅人数:" textFill="LIGHTGRAY">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="subNum" prefHeight="48.0" prefWidth="103.0" textFill="#6E6E6E">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+
+<!--            删除修改按钮-->
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0">
+               <children>
+                  <Button fx:id="updateInf" mnemonicParsing="false" prefHeight="50.0" prefWidth="111.0" style="-fx-background-radius: 100; -fx-background-color: #4a6c78; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);" text="修改" textFill="LIGHTGRAY">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="deleteMag" mnemonicParsing="false" prefHeight="50.0" prefWidth="111.0" style="-fx-background-radius: 100; -fx-background-color: #4a6c78; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);" text="删除" textFill="LIGHTGRAY">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

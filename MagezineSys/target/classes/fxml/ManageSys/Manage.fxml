@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<AnchorPane
+        prefHeight="800.0" prefWidth="1315.0"
+        xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="com.eccentric.Controller.ManageSys.ManageController"
+        stylesheets="@/css/style.css"
+>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+<!--            导航栏-->
+            <HBox prefHeight="96.0" prefWidth="1315.0" style="-fx-background-color: #17212B;">
+               <children>
+<!--                  管理按钮-->
+                  <HBox prefHeight="96.0" prefWidth="895.0">
+                     <children>
+<!--                        管理按钮-->
+                        <MenuButton alignment="CENTER" prefHeight="50.0" prefWidth="161.0" style="-fx-background-radius: 100; -fx-background-color: #4a6c78; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);" text="切 换 页 面" styleClass="manage-btn" textFill="LIGHTGRAY">
+                           <items>
+                              <MenuItem onAction="#ManageMagBtn" mnemonicParsing="false" text="杂志管理"/>
+                              <MenuItem onAction="#ManageUserBtn" mnemonicParsing="false" text="用户管理"/>
+                              <MenuItem onAction="#ManageOrderBtn" mnemonicParsing="false" text="订单管理"/>
+                           </items>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" top="20.0" />
+                           </HBox.margin>
+                        </MenuButton>
+<!--                        添加按钮-->
+                        <Button fx:id="addBtn" prefHeight="50.0" prefWidth="144.0" style="-fx-background-radius: 100; -fx-background-color: #4a6c78; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);" text="添 加" textFill="LIGHTGRAY">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" top="20.0" />
+                           </HBox.margin>
+                        </Button>
+
+<!--                        退出按钮-->
+                        <Button onAction="#logout" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" style="-fx-background-radius: 100; -fx-background-color: #4a6c78; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);" text="退 出" textFill="LIGHTGRAY">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" top="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+<!--            管理内容-->
+            <HBox alignment="CENTER" prefHeight="705.0" prefWidth="1315.0" style="-fx-background-color: #0E1621;">
+               <children>
+                  <ScrollPane prefHeight="705.0" prefWidth="1030.0" styleClass="viewport">
+                     <content>
+                        <GridPane fx:id="grid" prefHeight="0.0" prefWidth="0.0">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
