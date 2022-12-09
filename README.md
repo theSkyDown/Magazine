@@ -1,37 +1,45 @@
-# MagSubSys
+# `MagSubSys`
 
-#### 介绍
-杂志订阅系统
+## 介绍
+杂志订阅系统的目的是为了学习`Javafx`和提高编程思维而实现的。 该系统将用户分为两种类型：一种为普通用户，另一种为管理员用户
 
-#### 软件架构
-软件架构说明
+- 作为普通用户，通过创建新账户，使用杂志订阅系统，并管理自己的订阅信息。
+- 作为管理员用户，通过杂志后台管理系统，可以对杂志，用户以及订单进行管理。
 
+具体的内容请查看详细代码
 
-#### 安装教程
+## 软件架构
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+`MagezineSys`是主要的项目（项目名称打太急打错了），`MagazineImg`是程序运行时候所需要的图片。
 
-#### 使用说明
+## 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+找到指定目录，执行以下代码即可
 
-#### 参与贡献
+````
+git clone https://gitee.com/Eccentric0521/mag-sub-sys.git
+````
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+## 快速开始
 
+1. 配置`mysql`环境：执行`resources`下的三个`sql`文件
+2. 修改`jdbc`配置文件：将`resources`下的`jdbc.properties`文件的内容修改成自己的数据库和账号密码
+3. 修改文件地址`(FileHelp)`的配置文件：将`resources`下的`FileHelp.properties`文件的内容更改为项目`MagazineImg`的地址（注意：后边要有`'/'`）
+4. 运行代码：运行`src/main/java/com/eccentric/Starter/Main.java`文件
 
-#### 特技 
+## 开发环境
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+操作系统：`Arch Linux`
+
+开发环境：`IDEA`
+
+`JDK`版本：`jdk1.8`
+
+数据库版本：`MySQL 10.9.4`
+
+`Maven`版本：`Apache Maven 3.8.6`
+
+## 疑问答疑
+
+若存在问题可以联系`QQ`：202765405
+
