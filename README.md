@@ -43,3 +43,6 @@ git clone https://gitee.com/Eccentric0521/mag-sub-sys.git
 
 若存在问题可以联系`QQ`：202765405
 
+## 版权问题
+
+该系统根据学习自`https://github.com/mahmoudhamwi/Fruits-Market`，如侵权请联系作者删除
