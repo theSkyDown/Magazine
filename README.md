@@ -26,6 +26,21 @@ git clone https://gitee.com/Eccentric0521/mag-sub-sys.git
 2. 修改`jdbc`配置文件：将`resources`下的`jdbc.properties`文件的内容修改成自己的数据库和账号密码
 3. 修改文件地址`(FileHelp)`的配置文件：将`resources`下的`FileHelp.properties`文件的内容更改为项目`MagazineImg`的地址（注意：后边要有`'/'`）
 4. 运行代码：运行`src/main/java/com/eccentric/Starter/Main.java`文件
+5. 登陆账户：可以普通用户（账号：`admin`，密码：`123123`）的界面，还可以通过管理员账户登陆（账号：`root`，密码：`root`）
+
+## 运行效果
+
+登陆/注册页面
+
+![image-20221219182844738](MagazineImg/img/other/screenshot.png)
+
+普通用户页面
+
+![image-20221219183029213](MagazineImg/img/other/screenshot2.png)
+
+管理员页面
+
+![image-20221219183338120](MagazineImg/img/other/screenshot3.png)
 
 ## 开发环境
 
